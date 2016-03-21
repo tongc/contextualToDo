@@ -7,3 +7,9 @@ class ToDoItem {
 	private createDate: Date;
 	private dueDate: Date;
 }
+
+function getContext() {
+	return window.location.hostname;
+}
+
+console.info(getContext());

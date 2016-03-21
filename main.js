@@ -8,4 +8,8 @@ var ToDoItem = (function () {
     }
     return ToDoItem;
 }());
+function getContext() {
+    return window.location.hostname;
+}
+console.info(getContext());
 //# sourceMappingURL=main.js.map

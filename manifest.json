@@ -1,5 +1,5 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Contextual TODO",
   "description": "giving TODO lists some context information, such as if you are doing TODO from amazon webpages, it will tag the TODO with tag 'shopping' etc.",
   "version": "0.1",
@@ -10,7 +10,6 @@
   "background": {
     "persistent": true,
     "scripts": [
-      "jquery-1.11.1.min.js",
       "bk.js"
     ]
   },
@@ -28,7 +27,8 @@
     "https://*/",
     "tabs",
     "storage",
-    "unlimitedStorage"
+    "unlimitedStorage",
+    "contextMenus"
   ],
   "web_accessible_resources": [
     "*.map"
@@ -39,7 +39,6 @@
         "<all_urls>"
       ],
       "js": [
-        "jquery-1.11.1.min.js",
         "main.js"
       ]
     }
