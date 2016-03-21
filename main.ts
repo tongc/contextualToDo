@@ -12,4 +12,6 @@ function getContext() {
 	return window.location.hostname;
 }
 
-console.info(getContext());
+chrome.runtime.sendMessage({ context: getContext() }, function(response) {
+	
+});

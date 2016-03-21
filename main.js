@@ -11,5 +11,6 @@ var ToDoItem = (function () {
 function getContext() {
     return window.location.hostname;
 }
-console.info(getContext());
+chrome.runtime.sendMessage({ context: getContext() }, function (response) {
+});
 //# sourceMappingURL=main.js.map
